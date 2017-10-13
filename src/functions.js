@@ -238,3 +238,11 @@ export function roundTo(value, exp) {
   value = value.toString().split('e');
   return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
 }
+
+export function permutations(a, b) {
+  return factorial(a) / factorial(a - b);
+}
+
+export function combinations(a, b) {
+  return factorial(a) / (factorial(b) * factorial(a - b));
+}

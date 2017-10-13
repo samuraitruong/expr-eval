@@ -859,4 +859,17 @@ describe('Operators', function () {
       assert.ok(isNaN(parser.evaluate('(-1/0)!')));
     });
   });
+  describe('nPr', function () {
+    it('has the correct precedence', function () {
+      assert.strictEqual(parser.evaluate('3 nPr 2'), 6);
+      assert.strictEqual(parser.evaluate('10 nPr 4'), 5040);
+    });
+  });
+
+  describe('nCr', function () {
+    it('has the correct precedence', function () {
+      assert.strictEqual(parser.evaluate('10 nCr 4'), 210);
+    });
+  });
+
 });

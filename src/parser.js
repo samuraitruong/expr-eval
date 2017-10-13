@@ -34,7 +34,9 @@ import {
   stringLength,
   hypot,
   condition,
-  roundTo
+  roundTo,
+  permutations,
+  combinations
 } from './functions';
 
 export function Parser(options) {
@@ -86,7 +88,9 @@ export function Parser(options) {
     '<=': lessThanEqual,
     and: andOperator,
     or: orOperator,
-    'in': inOperator
+    'in': inOperator,
+    'nPr': permutations,
+    'nCr' : combinations
   };
 
   this.ternaryOps = {
@@ -104,7 +108,9 @@ export function Parser(options) {
     atan2: Math.atan2,
     'if': condition,
     gamma: gamma,
-    roundTo: roundTo
+    roundTo: roundTo,
+    nPr: permutations,
+    nCr: combinations
   };
 
   this.consts = {

@@ -421,7 +421,8 @@ var optionNameMap = {
   'or': 'logical',
   'not': 'logical',
   '?': 'conditional',
-  ':': 'conditional'
+  ':': 'conditional',
+  'prn': 'prn'
 };
 
 function getOptionName(op) {
