@@ -871,5 +871,4 @@ describe('Operators', function () {
       assert.strictEqual(parser.evaluate('10 nCr 4'), 210);
     });
   });
-
 });
